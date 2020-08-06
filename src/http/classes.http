@@ -1,0 +1,24 @@
+
+GET http://localhost:3333/classes
+  ?week_day=1
+  &subject=Ciências
+  &time=11:59
+###
+POST http://localhost:3333/classes
+content-type: application/json
+
+{
+  "name": "Marlos Augusto",
+  "avatar": "https://avatars1.githubusercontent.com/u/42413502?s=460&u=cee472dd5088f65eb7172587647012fb80817c6b&v=4",
+  "whatsapp": "46984034699",
+  "bio": "Desenvolvedor FullStack Web e Mobile - Estudante de Engenharia de Software - UTFPR. - marlos.augusto.dev@gmail.com",
+  "subject": "Ciências",
+  "cost": 80,
+  "schedule": [
+    { "week_day": 1, "from": "8:00", "to": "12:00" },
+    { "week_day": 3, "from": "13:00", "to": "18:00" },
+    { "week_day": 5, "from": "8:00", "to": "12:00" }
+  ]
+}
+###
+

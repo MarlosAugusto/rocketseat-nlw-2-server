@@ -57,7 +57,7 @@ export default class ClassesController {
       const insertedUsersIds = await trx('users').insert({
         name,
         avatar,
-        whatsapp,
+        whatsapp: whatsapp.split(' ').join('').split('-').join(''),
         bio
       })
 
